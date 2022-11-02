@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Word from "./components/word";
 
 function App() {
-  const [words, setWords] = useState("");
+  const [words, setWords] = useState([]);
   const fetchAllUrl = "https://baconipsum.com/api/?type=meat-and-filler";
 
   useEffect(() => {
